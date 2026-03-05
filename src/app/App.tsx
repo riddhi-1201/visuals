@@ -9,6 +9,7 @@ import { ActivitySection } from "./components/activity-section";
 import { MissingEntryPage } from "./components/missing-entry-page";
 import { SPOCDashboard } from "./components/spoc-dashboard";
 import { HomePage } from "./components/home-page";
+import { ManagerDashboard } from "./components/manager/manager-dashboard";
 import { motion } from "motion/react";
 
 export default function App() {
@@ -360,6 +361,8 @@ export default function App() {
                 <MissingEntryPage isDark={isDark} />
               ) : activePage === "approve-worklogs" ? (
                 <SPOCDashboard isDark={isDark} />
+              ) : activePage === "manager-dashboard" ? (
+                <ManagerDashboard isDark={isDark} />
               ) : (
                 <>
                   {/* Filter Bar */}

@@ -41,7 +41,7 @@ export function Sidebar({ activePage, onPageChange }: SidebarProps) {
       ],
     },
     {
-      id: "add-project",
+      id: "manager-dashboard",
       label: "Add Project",
       icon: FolderPlus,
       hasSubmenu: false,
