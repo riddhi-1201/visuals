@@ -10,6 +10,7 @@ import { MissingEntryPage } from "./components/missing-entry-page";
 import { SPOCDashboard } from "./components/spoc-dashboard";
 import { HomePage } from "./components/home-page";
 import { ManagerDashboard } from "./components/manager/manager-dashboard";
+import { MarkExtraShiftPage } from "./components/mark-extra-shift-page";
 import { motion } from "motion/react";
 
 export default function App() {
@@ -363,6 +364,8 @@ export default function App() {
                 <SPOCDashboard isDark={isDark} />
               ) : activePage === "manager-dashboard" ? (
                 <ManagerDashboard isDark={isDark} />
+              ) : activePage === "mark-extra-shift" ? (
+                <MarkExtraShiftPage isDark={isDark} onToggleTheme={() => setIsDark(!isDark)} />
               ) : (
                 <>
                   {/* Filter Bar */}
